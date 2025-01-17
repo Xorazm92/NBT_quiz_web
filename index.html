@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAweome CDN Link for Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <!-- Category Box -->
+    <div class="category_box">
+        <div class="info-title"><span>Test kategoriyasini tanlang</span></div>
+        <div class="category-list">
+            <button class="category_btn" data-file="industrial_qozon.json"> 🏭 Qozonxona operatori</button>
+            <button class="category_btn" data-file="industrial_yuk_iluvchi.json"> 🏗️ Yuk iluvchi</button>
+            <button class="category_btn" data-file="safety_yongin.json"> 🚒 Yong'in xavfsizligi</button>
+            <button class="category_btn" data-file="safety_elektr.json"> ⚡ Elektr xavfsizligi</button>
+            <button class="category_btn" data-file="industrial_mashinst.json"> 🚆 Mashinist</button>
+            <button class="category_btn" data-file="safety_mehnat.json"> 🧑‍🎓 Mehnat muhofazasi</button>
+            <button class="category_btn" data-file="safety_312_313.json"> 🦺 312-313 Xavfsizlik</button>
+            <button class="category_btn" data-file="industrial_itr.json"> 👨‍💼 ITR</button>
+        </div>
+    </div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Quiz qoidalari</span></div>
+        <div class="info-list">
+            <div class="info">1. Har bir savol uchun <span>25 soniya</span> vaqt beriladi.</div>
+            <div class="info">2. Javobni tanlagandan so'ng o'zgartirish mumkin emas.</div>
+            <div class="info">3. Vaqt tugagandan so'ng javob tanlash mumkin emas.</div>
+            <div class="info">4. Test davomida chiqib ketish mumkin emas.</div>
+            <div class="info">5. To'g'ri javoblar soni asosida ball olasiz.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Chiqish</button>
+            <button class="restart">Boshlash</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Quiz Application</div>
+            <div class="timer">
+                <div class="time_left_txt">Qolgan vaqt</div>
+                <div class="timer_sec">25</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Keyingi savol</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">Siz testni yakunladingiz!</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Qayta topshirish</button>
+            <button class="quit">Chiqish</button>
+        </div>
+    </div>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
